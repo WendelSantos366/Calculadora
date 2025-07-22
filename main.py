@@ -20,13 +20,14 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
         
     elif operador == '/':
         if num2 != 0:
-        result = num1 / num2
-        else ZeroDvisionError ("Impossível dividir por zero")
+            result = num1 / num2
+        else:
+                 raise ZeroDivisionError ("Impossível dividir por zero")
         
-    elif operador == '**'
+    elif operador == '**':
         result = num1 ** num2
         
-        return result 
+    return result 
     
 
 if __name__ == "__main__":
