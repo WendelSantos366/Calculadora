@@ -8,11 +8,26 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
     sinalizando que o cálculo não pôde ser realizado.
     """
     result = float("nan")
+    
     if operador == '+':
         result = num1 + num2
 
-    return result
-
+    elif operador == '-':
+        result = num1 - num2
+        
+    elif operador == '*':
+        result = num1 * num2
+        
+    elif operador == '/':
+        if num2 != 0:
+        result = num1 / num2
+        else ZeroDvisionError ("Impossível dividir por zero")
+        
+    elif operador == '**'
+        result = num1 ** num2
+        
+        return result 
+    
 
 if __name__ == "__main__":
 
