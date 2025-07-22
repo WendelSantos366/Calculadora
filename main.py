@@ -51,5 +51,12 @@ if __name__ == "__main__":
         except ZeroDivisionError:
             print('Impossível dividir por zero! -> Tente novamente!')
             time.sleep(2)
-
-        print('\nVolte sempre!\n')
+            
+            
+            
+        continuar = input("Deseja fazer outra operação? (s/n): ").strip().lower()
+        if continuar != 's':
+         print('\nVolte Sempre!\n')
+         break
+            
+            
