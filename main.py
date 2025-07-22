@@ -30,7 +30,7 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
     return result 
 
 def menu_operacoes():
-    print("Escolha a operação desejada! ")
+    print("Escolha a operação desejada: ")
     print(" (+) para somar ")
     print(" (-) para subtrair")
     print(" (*) para multiplicar ")
@@ -43,9 +43,10 @@ if __name__ == "__main__":
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         try:
-            print('Calculadora')
-            num1 = float(input("Digite o primeiro número: "))
+            print('Calculadora em Python')
             menu_operacoes()
+            operador = input("Digite o operador: ").strip()
+            num1 = float(input("Digite o primeiro número: "))
             num2 = float (input("Digite o segundo número: "))
             
             resultado = calculadora (num1, num2, operador)
