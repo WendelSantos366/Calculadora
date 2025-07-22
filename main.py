@@ -36,7 +36,11 @@ if __name__ == "__main__":
         os.system('cls' if os.name == 'nt' else 'clear')
         try:
             print('Calculadora')
-            print('----------------------------------\n')
+            num1 = float(input("Digite o primeiro número: "))
+            operador = input("Escolha a operação: (+, -, *, / ou **): ")
+            num2 = float (input("Digite o segundo número: "))
+            
+            resultado = calculadora (num1, num2, operador)
 
 
         except ValueError:
