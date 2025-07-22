@@ -41,6 +41,7 @@ if __name__ == "__main__":
             num2 = float (input("Digite o segundo número: "))
             
             resultado = calculadora (num1, num2, operador)
+            print(f"\nResultado: {num1} {operador} {num2} = {resultado}")
 
 
         except ValueError:
@@ -51,4 +52,4 @@ if __name__ == "__main__":
             print('Impossível dividir por zero! -> Tente novamente!')
             time.sleep(2)
 
-    print('\nVolte sempre!\n')
+        print('\nVolte sempre!\n')
